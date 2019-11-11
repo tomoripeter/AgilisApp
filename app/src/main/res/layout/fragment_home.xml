@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/forklift_home"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"
+        android:text="RegisTruck"
+        android:textColor="#FFFFFF"
+        android:background="@color/appBlue"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:id="@+id/forklift_home"
+        android:layout_width="280dp"
+        android:layout_height="391dp"
+        android:layout_above="@id/HomeDescript"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_factory_blue_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HomeDescript"
+        android:textSize="10dp"
+        android:text="BME Agilis Szoftverfejlesztés"
+        android:layout_above="@id/DemoText"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DemoText"
+        android:text="RegisTruck Demo v1.0"
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

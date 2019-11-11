@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RegisTruck</string>
+    <string name="home_button_description">Home</string>
+    <string name="statistics_button_description">Statistics</string>
+    <string name="settings_button_description">Settings</string>
+    <string name="forklift_button_description">Forklifts</string>
+</resources>

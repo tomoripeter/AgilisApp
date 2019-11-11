@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_button"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home_button_description"
+    />
+    <item
+        android:id="@+id/info_button"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/statistics_button_description"
+     />
+
+    <item
+        android:id="@+id/forklift_button"
+        android:icon="@drawable/ic_forklift_blue_24dp"
+        android:title="@string/forklift_button_description"
+     />
+
+</menu>
