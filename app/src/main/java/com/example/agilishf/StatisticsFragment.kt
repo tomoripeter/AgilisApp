@@ -17,6 +17,10 @@ import kotlin.random.Random
 
 class StatisticsFragment : Fragment() {
 
+    companion object {
+        val stat = ArrayList<Entry>()
+    }
+
     override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle? ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
 
@@ -25,12 +29,12 @@ class StatisticsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val stat = ArrayList<Entry>()
 
-        for(i in 0..11) {
-            stat.add(Entry(i.toFloat(), Random.nextInt(50,100).toFloat()))
+        if(stat.isEmpty()) {
+            for (i in 0..11) {
+                stat.add(Entry(i.toFloat(), Random.nextInt(50, 100).toFloat()))
+            }
         }
-
 
         val lineDataSet = LineDataSet(stat,"Honapok statisztikaja")
         lineDataSet.color = R.color.appBlue

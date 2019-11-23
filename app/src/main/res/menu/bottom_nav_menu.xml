@@ -7,7 +7,7 @@
         android:title="@string/home_button_description"
     />
     <item
-        android:id="@+id/info_button"
+        android:id="@+id/statistics_button"
         android:icon="@drawable/ic_info_black_24dp"
         android:title="@string/statistics_button_description"
      />

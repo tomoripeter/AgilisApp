@@ -2,9 +2,7 @@ package com.example.agilishf
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuInflater
 import android.view.MenuItem
-import android.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -15,7 +13,7 @@ class MainActivity : AppCompatActivity() {
             var selectedFragment:Fragment? = null
             when(item.itemId) {
                 R.id.home_button -> selectedFragment = HomeFragment()
-                R.id.info_button -> selectedFragment = StatisticsFragment()
+                R.id.statistics_button -> selectedFragment = StatisticsFragment()
                 R.id.forklift_button -> selectedFragment = ForkliftFragment()
             }
             supportFragmentManager.beginTransaction().replace(R.id.fragment_main, selectedFragment!!).commit()
